@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Car</h3>
+    <script type="text/javascript">
+        function Car(brand, model, yearOfManufacture, seats)
+        {
+            this.brand = brand;
+            this.model = model;
+            this.seats = seats;
+            this.yearOfManufacture = yearOfManufacture;
+
+            function getDescription(){
+                document.write(this.brand + " Brand: " + this.model + " Model: "+ this.yearOfManufacture +" yearOfManufacture: " + this.seats + "Anzahl Sitze:<br />");}
+
+            function ElectricCar(BatteryRange){
+                document.write(this.brand + " Brand: " + this.model + " Model: "+ this.yearOfManufacture +" yearOfManufacture: " + this.seats + "Anzahl Sitze:" + BatteryRange + "BatteryRange:<br />");}
+        }
+        var car = new Car("Ford", "Model T", "1965", "4");
+        var car = new Car("Ford", "Model T", "1965", "4", "270 km");
+    </script>
+</body>
+</html>
